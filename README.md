@@ -1,2 +1,2 @@
-# Site-de-Empregos
- Apenas o front-end de um site de emprego, feito em HTML, CSS e JAVA SCRIPT puro
+# Site de Empregos
+- Front-end de um site de emprego, com vagas pré-definidas, página de contato e página de envio de novas vagas e muito mais, vale a pena conferir

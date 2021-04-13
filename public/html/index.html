@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/9def1a7c03.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/logo.png">
+    <title>Achei Emprego</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <img id="logo" src="../img/logo.png" alt="home">
+                    <label id="titulo"><i>Achei Emprego</i></label>
+                    <ul>
+                        <li><a href="#">Vagas</a></li>
+                        <li><a href="#">Enviar vaga</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="main-banner">
+                <div id="search-form">
+                    <h1>A maneira mais rápida de achar seu emprego</h1>
+                    <p>Conecte-se de forma gratuita as melhores empresas e consiga seu emprego</p>
+                    <form>
+                        <input type="text" name="emprego" placeholder="Digite o cargo">
+                        <select name="regiao">
+                            <option value="">Todos os estados</option>
+                        </select>
+                        <select name="categoria">
+                            <option value="">Categoria</option>
+                        </select>
+                        <input type="submit" value="Procurar">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main id="lastjobs-container" class="wrapper">
+            <h1>Últimas vagas enviadas</h1>
+            <ul>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="../img/google-logo.png" alt="Google">
+                            <div class="company-info">
+                                <h3>Desenvolvedor</h3>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>São Paulo, SP</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="clt">CLT</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="../img/ibm-logo.png" alt="IBM">
+                            <div class="company-info">
+                                <h3>DBA</h3>
+                                <p>IBM</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Curitiba, PR</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="pj">PJ</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="../img/microsoft-logo.png" alt="Microsoft">
+                            <div class="company-info">
+                                <h3>Programador Back-end Júnior</h3>
+                                <p>Microsoft</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Belo Horizonte, MG</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="home-office">Home Office</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="../img/facebook-logo.png" alt="Facebook">
+                            <div class="company-info">
+                                <h3>Programador Front-end Pleno</h3>
+                                <p>Facebook</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Rio de Janeiro, RJ</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="clt">CLT</span>
+                        </div>
+                    </a>
+                </li>                                               
+            </ul>
+            <div class="btnjobs-container">
+                <a href="#" class="btn-jobs">Ver mais vagas</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

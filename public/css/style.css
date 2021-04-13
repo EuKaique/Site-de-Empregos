@@ -1,0 +1,246 @@
+/*Geral*/
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+    margin: 0;
+    color: rgb(70, 70, 70);
+}
+.container{
+    max-width: 1920px;
+    width: 100%;
+}
+
+/*Header - Cabeçalho*/
+
+header{
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+nav::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.nav-container{
+    max-width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-container ul{
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+.nav-container li{
+    float: left;
+    list-style: none;
+    margin: 0 15px;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+    margin-top: 25px;
+}
+#titulo{
+    position: absolute;
+    font-size: 1.1rem;
+    font-weight: 700;
+    top: 40px;
+}
+.nav-container li a{
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+    transition: .5s;
+}
+.nav-container li a:hover{
+    color: rgb(0, 0, 0);
+}
+#main-banner{
+    background: url('../img/banner.png') no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    position: relative;
+    top: 100px;
+}
+#search-form{
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 45px;
+    padding-bottom: 15em;
+    text-align: center;
+}
+#search-form h1{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+#search-form p{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 24px;
+    font-weight: 300;
+}
+#search-form input, #search-form select{
+    background-color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+#search-form input[type=submit]{
+    background-color: rgb(0, 140, 255);
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+#search-form input[type=submit]:hover{
+    background-color:rgb(0, 114, 207);
+    ;
+}
+
+/*Seção últimas vagas*/
+
+#lastjobs-container{
+    text-align: center;
+    padding: 100px 0;
+}
+#lastjobs-container h1{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+#lastjobs-container ul{
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+#lastjobs-container ul li{
+    list-style: none;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+    position: relative;
+}
+#lastjobs-container ul li:last-child{
+    border: none;
+}
+.clickarea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.company-box{
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    padding-left: 1%;
+}
+.company-box img{
+    width: 100px;
+    height: 75px;
+    margin-top: 2.5px;
+}
+.company-info{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-align: left;
+    position: absolute;
+}
+.company-info h3{
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.company-info p{
+    font-weight: bold;
+}
+.locality{
+    display: inline-block;
+    line-height: 80px;
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    color: rgb(83, 83, 83);
+}
+.locality i{
+    margin-right: 5px;
+}
+.locality i, .locality p{
+    display: inline-block;
+}
+.job-type{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    padding-top: 30px;
+    right: 1%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+.job-type span{
+    display: block;
+    border-radius: 5px;
+    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    color: white;
+}
+.clt{
+    background-color: rgb(33, 29, 231);
+}
+.pj{
+    background-color: rgb(231, 29, 29);
+}
+.home-office{
+    background-color: rgb(30, 190, 24);
+}
+.btnjobs-container{
+    margin-top: 50px;
+}
+.btn-jobs{
+    text-transform: uppercase;
+    background-color: white;
+    color: rgb(0, 140, 255);
+    border: 2px solid rgb(0, 140, 255);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+}
+.btn-jobs:hover{
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border: 2px solid transparent;
+}

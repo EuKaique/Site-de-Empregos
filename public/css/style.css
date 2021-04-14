@@ -1,4 +1,4 @@
-/*Geral*/
+/*GERAL*/
 
 html{
     font-family: 'Open Sans', sans-serif;
@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6,p,span{
     width: 100%;
 }
 
-/*Header - Cabeçalho*/
+/*HEADER - CABEÇALHO*/
 
 header{
     position: relative;
@@ -73,6 +73,9 @@ nav::after{
 .nav-container li a:hover{
     color: rgb(0, 0, 0);
 }
+
+/*MENU PRINCIPAL*/
+
 #main-banner{
     background: url('../img/banner.png') no-repeat;
     background-size: cover;
@@ -116,10 +119,9 @@ nav::after{
 }
 #search-form input[type=submit]:hover{
     background-color:rgb(0, 114, 207);
-    ;
 }
 
-/*Seção últimas vagas*/
+/*SEÇÃO ÚLTIMAS VAGAS*/
 
 #lastjobs-container{
     text-align: center;
@@ -243,4 +245,193 @@ nav::after{
     background-color: rgb(0, 140, 255);
     color: white;
     border: 2px solid transparent;
+}
+
+/*SEÇÃO ENVIAR VAGA*/
+
+#sendjobs-container{
+    background: url('../img/enviar-vaga.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 25%;
+    padding: 15em 0;
+}
+#sendjobs-container h2, #sendjobs-container p{
+    width: 600px;
+    color: rgb(54, 54, 54);
+}
+#sendjobs-container h2{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+#sendjobs-container p{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.light-btn{
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: rgb(97, 97, 97);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .5s;
+    margin-left: 10%;
+}
+.light-btn:hover{
+    background-color: rgb(97, 97, 97);
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+/*SEÇÃO DE STATUS*/
+
+#status-container{
+    text-align: center;
+    padding: 5em 0;
+}
+.title-center{
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.p-center{
+    font-size: 18px;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.status-box{
+    text-align: center;
+    display: inline-block;
+    width: 24.5%;
+    margin-top: 80px;
+    border-left: 1px solid rgb(202, 202, 202);
+    border-right: 1px solid rgb(202, 202, 202);
+    height: 100px;
+}
+.status-box:nth-child(2){
+    border: none;
+}
+.status-box:nth-child(3){
+    border-right: none;
+}
+.status-qtd{
+    font-size: 36px;
+}
+.status-text{
+    font-size: 18px;
+}
+
+/*SEÇÃO DE DEPOIMENTOS*/
+
+#testmony-container{
+    padding: 10em 0;
+    background: url('../img/testmony.png') no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+#testmony-container h2, #testmony-container p{
+    text-align: center;
+    color: #fff;
+}
+#testmony-container h2{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+#testmony-container p{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.testmony-box{
+    text-align: center;
+    display: inline-block;
+    width: 24.5%;
+}
+#testmony-container .testmony-box .testmony-msg{
+    background-color: #fff;
+    color: rgb(116, 116, 116);
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    margin: 35px auto;
+    font-style: italic;
+}
+.testmony-box img{
+    width: 100px;
+    height: 100px;
+}
+.testmony-msg::after{
+    position: absolute;
+    content:'';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testmony-name{
+    font-weight: bold;
+}
+
+/*SEÇÃO DO BLOG*/
+
+#blog-container{
+    text-align: center;
+    padding: 5em 0;
+}
+#blog-container h2{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+#blog-container p{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.blog-box{
+    display: inline-block;
+    position: relative;
+    width: 24.5%;
+    margin-left: 20px;
+    text-align: left;
+}
+.blog-box img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+#blog-container .blog-box h4{
+    font-size: 24px;
+    margin-top: 10px;
+}
+#blog-container .blog-box span{
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+#blog-container .blog-box p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+#blog-container .blog-btn{
+    background-color: rgb(0, 114, 207);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .5s;
+}
+#blog-container .blog-btn:hover{
+    background-color:rgb(0, 91, 165);
+    cursor: pointer;
 }

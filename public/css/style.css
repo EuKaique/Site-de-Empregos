@@ -94,13 +94,14 @@ nav::after{
 }
 #search-form h1{
     font-size: 40px;
-    color: rgb(0, 0, 0);
+    color: #444;
 }
 #search-form p{
     margin-top: 30px;
     margin-bottom: 60px;
     font-size: 24px;
     font-weight: 300;
+    color: #444;
 }
 #search-form input, #search-form select{
     background-color: white;
@@ -109,6 +110,7 @@ nav::after{
     padding: 10px 20px;
     font-size: 18px;
     margin: 0 10px;
+    color: #444;
 }
 #search-form input[type=submit]{
     background-color: rgb(0, 140, 255);
@@ -183,6 +185,7 @@ nav::after{
 }
 .company-info p{
     font-weight: bold;
+    color: #000;
 }
 .locality{
     display: inline-block;
@@ -197,6 +200,7 @@ nav::after{
 }
 .locality i, .locality p{
     display: inline-block;
+    color: #666;
 }
 .job-type{
     display: inline-block;
@@ -302,6 +306,7 @@ nav::after{
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    color: #000;
 }
 .status-box{
     text-align: center;
@@ -320,9 +325,11 @@ nav::after{
 }
 .status-qtd{
     font-size: 36px;
+    color: #666;
 }
 .status-text{
     font-size: 18px;
+    color: #666;
 }
 
 /*SEÇÃO DE DEPOIMENTOS*/
@@ -399,7 +406,7 @@ nav::after{
 .blog-box{
     display: inline-block;
     position: relative;
-    width: 24.5%;
+    width: 25%;
     margin-left: 20px;
     text-align: left;
 }
@@ -411,15 +418,18 @@ nav::after{
 #blog-container .blog-box h4{
     font-size: 24px;
     margin-top: 10px;
+    color: #000;
 }
 #blog-container .blog-box span{
     font-size: 12px;
     margin-top: 20px;
     font-weight: 600;
+    color: #000;
 }
 #blog-container .blog-box p{
     font-size: 14px;
     margin-top: 20px;
+    color: #000;
 }
 #blog-container .blog-btn{
     background-color: rgb(0, 114, 207);
@@ -434,4 +444,237 @@ nav::after{
 #blog-container .blog-btn:hover{
     background-color:rgb(0, 91, 165);
     cursor: pointer;
+}
+
+/*FOOTER - RODAPÉ*/
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 91, 165);
+    color: #fff;
+    border-top: 5px solid #fff;
+    padding-top: 5em;
+    padding-bottom: 40px;
+
+}
+footer h2, p, span{
+    color: #fff;
+}
+footer h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+footer span{
+    font-size: 12px;
+}
+.left-footer{
+    display: inline-block;
+    position: relative;
+    width: 24.5%;
+    margin-left: 10%;
+    bottom: 100px;
+}
+.center-footer{
+    display: inline-block;
+    position: relative;
+    width: 24.5%;
+    margin-left: 5%;
+    top: 100px;
+}
+.center-footer .center-p{
+    margin-top: 30px;
+}
+.center-footer span:hover{
+    color: rgba(255, 255, 255, 0.637);
+    cursor: pointer;
+}
+.center-p:hover{
+    color: rgba(255, 255, 255, 0.637);
+    cursor: pointer;
+}
+.right-footer{
+    display: inline-block;
+    position: relative;
+    width: 24.5%;
+    margin-left: 5%;
+    bottom: 185px;
+    
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: relative;
+    text-decoration: none;
+}
+.socials a{
+    color: #fff;
+}
+.socials a:hover{
+    color: rgba(255, 255, 255, 0.637);
+}
+.socials i{
+    font-size: 28px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+.socials span{
+    font-size: 14px;
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.socials span:hover{
+    color: rgba(255, 255, 255, 0.637);
+}
+.p-footer{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1024px){
+    #logo{
+        position: absolute;
+        left: 50px;
+    }
+    #titulo{
+        position: absolute;
+        font-size: 1.1rem;
+        font-weight: 700;
+        top: 40px;
+        left: 105px;
+    }
+    .nav-container ul{
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+    .nav-container ul li{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: inline-block;
+        margin: 0 10px;
+    }
+    #search-form{
+        padding-top: 25em;
+        padding-bottom: 5em;
+    }
+    #search-form form{
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #search-form form input, #search-form form select{
+        display: block;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        border-width: 0;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+    #lastjobs-container.wrapper, #status-container.wrapper, #blog-container.wrapper, .wrapper{
+        max-width: 960px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+/*TABLET*/
+
+@media screen and (max-width: 768px){
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    .company-info h3{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+    .company-info p{
+        font-size: 12px;
+        font-weight: bold;
+        color: #000;
+    }
+    .status-box {
+        text-align: center;
+        display: inline-block;
+        width: 35%;
+        margin-top: 80px;
+        border-left: 1px solid rgb(202, 202, 202);
+        border-right: 1px solid rgb(202, 202, 202);
+        height: 100px;
+    }
+    .status-box:nth-child(2) {
+        border-right: 1px solid rgb(202, 202, 202);
+    }
+    #testmony-container {
+        padding: 10em 0;
+        background: url('../img/testmony.png') no-repeat;
+        background-size: cover;
+        height: 500px;
+    }
+    footer{
+        height: 550px;
+    }
+    .left-footer {
+        display: block;
+        position: relative;
+        width: 80%;
+        margin-left: 25%;
+        bottom: 0px;
+    }
+    .left-footer img{
+        display: block;
+        position: relative;
+        margin-left: 8%;
+        margin-right: auto;
+        bottom: 0px;
+    }
+    .center-footer {
+        display: block;
+        position: relative;
+        width: 80%;
+        margin-left: 20%;
+        top: 50px;
+    }
+    .center-footer h2{
+        margin-left: 100px;
+    }
+    .right-footer {
+        display: block;
+        position: relative;
+        width: 80%;
+        margin-left: 5%;
+        top: 75px;
+    }
+    .right-footer h2{
+        margin-left: 200px;
+    }
+    .socials {
+        bottom: 20px;
+        display: block;
+        position: relative;
+        text-decoration: none;
+        float: none;
+        flex-direction: row;
+        margin-left: 160px;
+    }
+    .p-footer {
+        margin-top: 100px;
+        text-align: center;
+        border-top: 1px solid rgb(255, 255, 255);
+    }
 }

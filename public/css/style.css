@@ -10,6 +10,13 @@ h1,h2,h3,h4,h5,h6,p,span{
     margin: 0;
     color: rgb(70, 70, 70);
 }
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a label{
+    color: #000;
+}
 .container{
     max-width: 1920px;
     width: 100%;
@@ -64,6 +71,9 @@ nav::after{
     font-size: 1.1rem;
     font-weight: 700;
     top: 40px;
+}
+#menu{
+    display: none;
 }
 .nav-container li a{
     text-decoration: none;
@@ -535,7 +545,7 @@ footer span{
     border-top: 1px solid rgb(255, 255, 255);
 }
 
-/* RESPONSIVO */
+/* LAPTOP */
 
 @media screen and (max-width: 1024px){
     #logo{
@@ -588,7 +598,7 @@ footer span{
     }
 }
 
-/*TABLET*/
+/* TABLET */
 
 @media screen and (max-width: 768px){
     html,body{
@@ -676,5 +686,163 @@ footer span{
         margin-top: 100px;
         text-align: center;
         border-top: 1px solid rgb(255, 255, 255);
+    }
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 730px){
+    .nav-container li{
+        float: none;
+        list-style: none;
+        margin: 0 15px;
+        left: 20%;
+    }
+    #titulo{
+        position: absolute;
+        font-size: 1.1rem;
+        font-weight: 700;
+        top: 40px;
+        left: 105px;
+    }
+    .company-box img {
+        width: 80px;
+        height: 60px;
+        margin-top: 10px;
+    }
+    .company-info {
+        display: inline-block;
+        margin-left: 50px;
+        margin-top: 20px;
+        text-align: left;
+        position: absolute;
+    }
+    .company-info h3 {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+    .locality {
+        display: inline-block;
+        line-height: 80px;
+        position: absolute;
+        height: 100%;
+        width: 35%;
+        color: rgb(83, 83, 83);
+    }
+    .locality i, .locality p {
+        display: inline-block;
+        color: #666;
+        font-size: 14px;
+    }
+    .job-type {
+        display: inline-block;
+        width: 15%;
+        height: 100%;
+        position: absolute;
+        padding-top: 30px;
+        right: 2%;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    #sendjobs-container {
+        background: url('../img/enviar-vaga.jpg') no-repeat;
+        background-size: cover;
+        background-position: 0% 0;
+        padding: 15em 0;
+    }
+    .status-box{
+        width: 40%;
+        border: none;
+    }
+    .status-box:nth-child(1) {
+        border-right: 1px solid #ccc;
+    }
+    .status-box:nth-child(2) {
+        border-right: none;
+    }
+    .status-box:nth-child(3) {
+        border-right: 1px solid #ccc;
+    }
+    .testmony-box {
+        text-align: center;
+        display: inline-block;
+        width: 45.5%;
+        margin-left: 2%;
+    }
+    #testmony-container {
+        padding: 10em 0;
+        background: url('../img/testmony.png') no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    .blog-box {
+        display: inline-block;
+        position: relative;
+        width: 75%;
+        height: 600px;
+        margin-left: 20px;
+        text-align: left;
+    }
+    .blog-box img {
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+    }
+    footer {
+        height: 100%;
+    }
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 576px){
+    html, body{
+        overflow-x: hidden;
+    }
+    nav{
+        height: 6.2em;
+    }
+    #logo{
+        height: 2em;
+        width: 2em;
+        margin-top: 2em;
+        left: 5em;
+    }
+    #titulo{
+        position: relative;
+        font-size: 1rem;
+        font-weight: 700;
+        top: 3em;
+    }
+    #menu{
+        display: block !important;
+        font-size: 1.75em;
+        color: #888;
+        position: absolute;
+        right: 2.5em;
+        top: 1.5em;
+    }
+    .open{
+        display: block !important;
+    }
+    .nav-container ul{
+        position: relative;
+        top: 4em;
+        height: 3em;
+        line-height: 3em;
+        display: none;
+    }
+    .nav-container ul li{
+        display: block;
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        position: static;
+        margin: 0;
+    }
+    .nav-container ul li a{
+        font-size: 1em;
     }
 }

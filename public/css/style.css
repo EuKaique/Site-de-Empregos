@@ -560,8 +560,9 @@ footer span{
         left: 105px;
     }
     .nav-container ul{
-        float: none;
+        float: right;
         text-align: center;
+        margin-right: 10px;
         padding: 0;
     }
     .nav-container ul li{
@@ -636,6 +637,19 @@ footer span{
         background-size: cover;
         height: 500px;
     }
+    .blog-box{
+        display: block;
+        position: relative;
+        width: 80%;
+        margin-left: 85px;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .blog-box img{
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+    }
     footer{
         height: 550px;
     }
@@ -643,7 +657,7 @@ footer span{
         display: block;
         position: relative;
         width: 80%;
-        margin-left: 25%;
+        margin-left: 28%;
         bottom: 0px;
     }
     .left-footer img{
@@ -657,7 +671,7 @@ footer span{
         display: block;
         position: relative;
         width: 80%;
-        margin-left: 20%;
+        margin-left: 24%;
         top: 50px;
     }
     .center-footer h2{
@@ -667,11 +681,11 @@ footer span{
         display: block;
         position: relative;
         width: 80%;
-        margin-left: 5%;
+        margin-left: 10%;
         top: 75px;
     }
     .right-footer h2{
-        margin-left: 200px;
+        margin-left: 190px;
     }
     .socials {
         bottom: 20px;
@@ -680,7 +694,7 @@ footer span{
         text-decoration: none;
         float: none;
         flex-direction: row;
-        margin-left: 160px;
+        margin-left: 150px;
     }
     .p-footer {
         margin-top: 100px;
@@ -692,6 +706,12 @@ footer span{
 /* RESPONSIVO */
 
 @media screen and (max-width: 730px){
+    .nav-container ul{
+        float: right;
+        height: 100px;
+        line-height: 100px;
+        margin-right: 60px;
+    }
     .nav-container li{
         float: none;
         list-style: none;
@@ -830,7 +850,7 @@ footer span{
     }
     .nav-container ul{
         position: relative;
-        top: 4em;
+        top: 6.2em;
         height: 3em;
         line-height: 3em;
         display: none;
@@ -839,10 +859,138 @@ footer span{
         display: block;
         background-color: #fff;
         border-top: 1px solid #ccc;
+        border-radius: 12px;
         position: static;
-        margin: 0;
+        margin: 2px 60px;
+        width: 100%;
     }
     .nav-container ul li a{
         font-size: 1em;
     }
+    .company-info {
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 20px;
+        text-align: left;
+        position: absolute;
+    }
+    .company-info h3 {
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+    #sendjobs-container p {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    #sendjobs-container h2, #sendjobs-container p {
+        width: 540px;
+        color: rgb(54, 54, 54);
+    }
+    .light-btn {
+        background-color: #fff;
+        border: 2px solid #fff;
+        color: rgb(97, 97, 97);
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: .5s;
+        margin-left: 20%;
+    }
+    .title-center {
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    #blog-container h2 {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .blog-box {
+        display: inline-block;
+        position: relative;
+        width: 75%;
+        height: 520px;
+        margin-left: 20px;
+        text-align: left;
+    }
+    .left-footer {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-left: 20%;
+        bottom: 50px;
+    }
+    .left-footer img {
+        display: block;
+        position: relative;
+        margin-left: 15%;
+        margin-right: auto;
+        bottom: 0px;
+    }
+    .left-footer .titulo {
+        margin-bottom: 100px;
+        font-weight: bold;
+        margin-left: 140px;
+        top: 40px;
+        position: absolute;
+    }
+    .center-footer {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin-left: 15%;
+        top: 20px;
+    }
+    .center-footer .center-p{
+        margin-top: 30px;
+    }
+    .center-footer span:hover{
+        color: rgba(255, 255, 255, 0.637);
+        cursor: pointer;
+    }
+    .center-p:hover{
+        color: rgba(255, 255, 255, 0.637);
+        cursor: pointer;
+    }
+    .right-footer {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin-left: -3%;
+        bottom: 185px;
+    }
+    .socials {
+        float: left;
+        position: relative;
+        text-decoration: none;
+    }
+    .socials a{
+        color: #fff;
+    }
+    .socials a:hover{
+        color: rgba(255, 255, 255, 0.637);
+    }
+    .socials i{
+        font-size: 28px;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+    .socials span{
+        font-size: 14px;
+        margin-left: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .socials span:hover{
+        color: rgba(255, 255, 255, 0.637);
+    }
+    .p-footer {
+        margin-top: 100px;
+        text-align: center;
+        border-top: 1px solid rgb(255, 255, 255);
+        margin-bottom: 0;
+    }
+
 }

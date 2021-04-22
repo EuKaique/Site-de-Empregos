@@ -4,9 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vagas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/9def1a7c03.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/logo.png">
+    <title>Achei Emprego</title>
 </head>
 <body>
-    <h1>Vagas</h1>
+    <div class="container" id="find-jobs">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <a href="index.html">
+                        <img id="logo" src="../img/logo.png" alt="home">
+                        <label id="titulo"><i>Achei Emprego</i></label>
+                    </a>
+                    <i id="menu" class="fas fa-bars btn-menumobile"></i>   
+                    <ul>
+                        <li><a href="enviar-vagas.html">Enviar vaga</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="lastjobs-container" class="wrapper">
+            <h1>Busque uma vaga</h1>
+            <div id="job-filter">
+                <div id="search-form">
+                    <form>
+                        <input type="text" name="job" placeholder="Digite o cargo">
+                        <select name="region">
+                            <option value="">Todos os estados</option>
+                        </select>
+                        <select name="category">
+                            <option value="">Categoria</option>
+                        </select>
+                        <input type="submit" value="Pesquisar">
+                    </form>
+                </div>
+            </div>
+            <div id="type-filter">
+                <ul>
+                    <li>
+                        <input type="checkbox" checked><label>CLT</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>PJ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>HOME OFFICE</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>FREE LANCE</label>
+                    </li>
+                </ul>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="../img/google-logo.png" alt="Google">
+                            <div class="company-info">
+                                <h3>Desenvolvedor</h3>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>São Paulo, SP</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="clt">CLT</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="../img/ibm-logo.png" alt="IBM">
+                            <div class="company-info">
+                                <h3>DBA</h3>
+                                <p>IBM</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Curitiba, PR</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="pj">PJ</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="../img/microsoft-logo.png" alt="Microsoft">
+                            <div class="company-info">
+                                <h3>Programador Back-end Júnior</h3>
+                                <p>Microsoft</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Belo Horizonte, MG</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="home-office">Home Office</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="../img/facebook-logo.png" alt="Facebook">
+                            <div class="company-info">
+                                <h3>Programador Front-end Pleno</h3>
+                                <p>Facebook</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Rio de Janeiro, RJ</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="clt">CLT</span>
+                        </div>
+                    </a>
+                </li>                                               
+            </ul>
+            <div class="btnjobs-container">
+                <a href="#" class="btn-jobs">Carregar mais vagas</a>
+            </div>
+        </main>
+
+        <footer>
+			<div class="wrapper">
+				<div class="footer-box">
+					<div class="company-footer">
+						<img src="../img/logo.png">
+						<h2>Achei Emprego</h2>
+						<p>A maneira mais fácil de encontrar seu próximo emprego.</p>
+					</div>
+				</div>
+				<div class="footer-box">
+					<div class="articles-footer">
+						<h2>Artigos rescentes</h2>
+						<ul class="footer-list footer-article-list">
+							<li>
+								<a href="#">Como conseguir o primeiro emprego em tempos de crise?</a>
+								<span class="article-date">05 de fevereiro de 2019</span>
+							</li>
+							<li>
+								<a href="#">Vagas sobrando em tecnologia, como conseguir uma?</a>
+								<span class="article-date">14 de Abril de 2020</span>
+							</li>
+							<li>
+								<a href="#">Como a pandemia afetou as empresas?</a>
+								<span class="article-date">26 de Janeiro de 2021</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-box">
+					<h2>Nossas redes sociais</h2>
+					<ul class="footer-list">
+						<li>
+							<a href="#">
+								<i class="fab fa-facebook-square"></i>
+								<span>Facebook</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+								<span>Instagram</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-linkedin"></i>
+								<span>Linkedin</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="wrapper">
+					<p>EuKaique &reg; - 2021</p>
+				</div>
+			</div>
+		</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

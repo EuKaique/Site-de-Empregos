@@ -4,9 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enviar vagas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/9def1a7c03.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/logo.png">
+    <title>Achei Emprego</title>
 </head>
 <body>
-    <h1>Enviar vagas</h1>
+    <div class="container" id="sendjobs">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <a href="index.html">
+                        <img id="logo" src="../img/logo.png" alt="home">
+                        <label id="titulo"><i>Achei Emprego</i></label>
+                    </a>
+                    <i id="menu" class="fas fa-bars btn-menumobile"></i>   
+                    <ul>
+                        <li><a href="vagas.html">Vagas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="sendjobs-container" class="wrapper">
+            <h1>Preencha os dados da vaga</h1>
+            <form>
+                <div class="input-box">
+                    <label class="formlabel">Título da vaga <span class="required">*</span></label>
+                    <input type="text" name="jobtitle" placeholder="Insira o título da vaga">
+                </div>
+                <div class="input-box">
+                    <label class="formlabel">Descrição da vaga <span class="required">*</span></label>
+                    <textarea type="text" name="description" placeholder="Insira a descrição da vaga"></textarea>
+                </div>
+                <div class="input-box">
+                    <label class="formlabel">Nome da empresa <span class="required">*</span></label>
+                    <input type="text" name="company" placeholder="Insira o nome da empresa">
+                </div>
+                <div class="input-box">
+                    <label class="formlabel">Tipo de contratação <span class="required">*</span></label>
+                    <select name="jobtype">
+                        <option value="clt">CLT</option>
+                        <option value="pj">PJ</option>
+                        <option value="home-office">HOME OFFICE</option>
+                        <option value="free-lance">FREE LANCE</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </main>
+        <footer>
+			<div class="wrapper">
+				<div class="footer-box">
+					<div class="company-footer">
+						<img src="../img/logo.png">
+						<h2>Achei Emprego</h2>
+						<p>A maneira mais fácil de encontrar seu próximo emprego.</p>
+					</div>
+				</div>
+				<div class="footer-box">
+					<div class="articles-footer">
+						<h2>Artigos rescentes</h2>
+						<ul class="footer-list footer-article-list">
+							<li>
+								<a href="#">Como conseguir o primeiro emprego em tempos de crise?</a>
+								<span class="article-date">05 de fevereiro de 2019</span>
+							</li>
+							<li>
+								<a href="#">Vagas sobrando em tecnologia, como conseguir uma?</a>
+								<span class="article-date">14 de Abril de 2020</span>
+							</li>
+							<li>
+								<a href="#">Como a pandemia afetou as empresas?</a>
+								<span class="article-date">26 de Janeiro de 2021</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-box">
+					<h2>Nossas redes sociais</h2>
+					<ul class="footer-list">
+						<li>
+							<a href="#">
+								<i class="fab fa-facebook-square"></i>
+								<span>Facebook</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+								<span>Instagram</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-linkedin"></i>
+								<span>Linkedin</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="wrapper">
+					<p>EuKaique &reg; - 2021</p>
+				</div>
+			</div>
+		</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

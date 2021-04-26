@@ -2,7 +2,8 @@
 
 ### Página inicial do site
 
-<center width="100%">
+<center>
+  
 - Menu principal, com campo de pesquisa e filtro de vagas
 ![index-01](https://user-images.githubusercontent.com/34290569/116129685-c41ac900-a6a0-11eb-9be8-d5c97b68bf2c.PNG)
 
@@ -21,6 +22,7 @@
 - Seção com os últimos artigos do blog
 ![index-06](https://user-images.githubusercontent.com/34290569/116130331-7783bd80-a6a1-11eb-8d20-703a253b183a.PNG)
 
-- Rodapé do site 
+- Rodapé do site com logo e nome, últimos artigos e redes sociais
 ![index-07](https://user-images.githubusercontent.com/34290569/116130391-8ec2ab00-a6a1-11eb-9872-95a4bff287e2.PNG)
+
 </center>
